@@ -12,21 +12,23 @@ export class MapContainer extends Component {
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
-      showingInfoWindow: true
+      showingInfoWindow: true,
     });
 
-  onClose = props => {
+  onClose = (props) => {
     if (this.state.showingInfoWindow) {
       this.setState({
         showingInfoWindow: false,
-        activeMarker: null
+        activeMarker: null,
       });
     }
   };
   render() {
     return (
       <div className="map">
-        <h2 className="map-h2">Visit The Bike Station at {this.props.location.commonName}</h2>
+        <h2 className="map-h2">
+          Visit The Bike Station at {this.props.location.commonName}
+        </h2>
         <div className="google-map">
           <Map
             google={this.props.google}
@@ -50,7 +52,6 @@ export class MapContainer extends Component {
                 <h4>{this.state.selectedPlace.name}</h4>
               </div>
             </InfoWindow>
-            
           </Map>
         </div>
       </div>

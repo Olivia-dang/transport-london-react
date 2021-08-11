@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./BikePointList.css";
 
-export default function BikePointList({bikePointList}) {
+export default function BikePointList({ bikePointList }) {
   const [formState, setFormState] = useState({ searchText: "" });
   const [searchResult, setResult] = useState(null);
 
@@ -24,11 +24,10 @@ export default function BikePointList({bikePointList}) {
     });
   }
 
-  let listToShow = bikePointList
+  let listToShow = bikePointList;
   if (searchResult) {
-    listToShow = searchResult
+    listToShow = searchResult;
   }
-
 
   return bikePointList ? (
     <div>

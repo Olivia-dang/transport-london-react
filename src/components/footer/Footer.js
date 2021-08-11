@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,17 +8,15 @@ export default function Footer() {
       <section className="footer-container">
         <nav className="footer-navigation">
           <ul>
-          <li>
-            <Link to="/home">HOME</Link>
-          </li>
-          <li>
-            <Link to="/bikepoints">BIKE POINTS</Link>
-          </li>
-          
+            <li>
+              <Link to="/home">HOME</Link>
+            </li>
+            <li>
+              <Link to="/bikepoints">BIKE POINTS</Link>
+            </li>
           </ul>
         </nav>
         <div className="footer-socialmedia">
-    
           <a href="https://twitter.com/OliviaDang11">
             <svg
               className="button twitter"

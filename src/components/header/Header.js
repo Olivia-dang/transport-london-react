@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <nav className="header" id="myTopnav">
-        <div className="nav-left">
-          <a href="/" className="logo">
+      <div className="nav-left">
+        <a href="/" className="logo">
           <img
             src="images/psyduck-icon.svg"
             alt="psyduck"
@@ -26,25 +26,28 @@ export default function Header() {
             width="57"
           />
         </a>
+      </div>
+      <div className="nav-right">
+        <ul className={click ? "nav-options responsive" : "nav-options"}>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link to="/home" className="option-link">
+              HOME
+            </Link>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+            <Link to="/bikepoints" className="option-link">
+              BIKE POINTS
+            </Link>
+          </li>
+        </ul>
+        <div className="mobile-menu" onClick={handleClick}>
+          {click ? (
+            <CloseMenu className="menu-icon" />
+          ) : (
+            <MenuIcon className="menu-icon" />
+          )}
         </div>
-        <div className="nav-right">
-          <ul className={click ? "nav-options responsive" : "nav-options"}>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link to="/home" className="option-link">HOME</Link>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link to="/bikepoints"className="option-link">BIKE POINTS</Link>
-            </li>
-            
-          </ul>
-          <div className="mobile-menu" onClick={handleClick}>
-            {click ? (
-              <CloseMenu className="menu-icon" />
-            ) : (
-              <MenuIcon className="menu-icon" />
-            )}
-          </div>
-        </div>
+      </div>
     </nav>
   );
 }

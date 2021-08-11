@@ -1,177 +1,158 @@
 /* SCREENSHOT CONTAINER */
 .header-text {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:#fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
 .header-text h1 {
-font-size: 3em;
-margin-block-start: 8px;
-margin-left: 20px;
-margin-right: 20px;
+  font-size: 3em;
+  margin-block-start: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .header-text p {
-font-style: italic;
-font-size: 1.5em;
-margin: 0px auto;
-} 
-.header-home {
-    background: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-      ),
-      url(../../assets/home.jpg); 
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
+  font-style: italic;
+  font-size: 1.5em;
+  margin: 0px auto;
 }
-   
+.header-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/home.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media screen and (min-width: 769px) {
-    .screenshot {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto ;
-        padding-top: 5%;        
-      
-    }
+  .screenshot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
   }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 768px) {
-    .screenshot {
-        padding-bottom: 80px;
-        margin-left: auto;
-        margin-right: auto ;
-        justify-content: center;
-        padding-top: 5%;
-       
-    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .screenshot {
+    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 5%;
   }
-  
-  /* SCREENSHOT ITEM */
-  
-  
-  @media screen and (min-width: 769px) {
-    .screenshot-item {
-        width: 15%;     
-        margin-left: auto;
-        margin-right: auto; 
-        padding-bottom: 5%;
-    }
+}
+
+/* SCREENSHOT ITEM */
+
+@media screen and (min-width: 769px) {
+  .screenshot-item {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
   }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 768px) {
-    .screenshot-item {
-       width: 60%;
-       margin-left: auto;
-       margin-right: auto;
-       
-    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .screenshot-item {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  .buttonClass {
-      padding-top: 10%;
+.buttonClass {
+  padding-top: 10%;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .home-image {
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 20%;
   }
+}
 
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 768px) {
-    .home-image {
-        padding-bottom: 10%;
-        margin-left: auto;
-        margin-right: auto ;
-        justify-content: center;
-        padding-top: 20%;
-    }
-  }
+.image {
+  position: relative;
+  width: 100%;
+}
 
-
-
-  .image { 
-    position: relative; 
-    width: 100%; 
-  
- }
-
- @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .head {
-      position: absolute; 
-      top: 35%;
-      left: 0; 
-      width: 100%; 
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;    
-      color: white;
-      text-align: left;
-      margin-left: 5vw;      
-    
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    margin-left: 5vw;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 768px) {
   .head {
-      position: absolute; 
-      top: 45%;
-      left: 0; 
-      font-size: 35px;
-      width: 50%; 
-      line-height: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;    
-      color: white;
-      text-align: left;
-      margin-left: 5vw;
-     
+    position: absolute;
+    top: 45%;
+    left: 0;
+    font-size: 35px;
+    width: 50%;
+    line-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    margin-left: 5vw;
   }
 }
- 
 
 @media screen and (min-width: 701px) {
   .text {
-      position: absolute; 
-      top: 50%;
-      font-size: 15px;
-      left: 0; 
-      width: 25%; 
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;    
-      color: white;
-      text-align: left;
-      margin-left: 5vw;   
-    
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+    left: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    margin-left: 5vw;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 700px) {
   .text {
-      position: absolute; 
-      top: 65%;
-      left: 0; 
-      font-size: 10px;
-      width: 80vw; 
-      line-height: 150%;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      flex-direction: column;
-      justify-content: flex-end;    
-      color: white;
-      text-align: left;
-      margin-left: 5vw;
-     
+    position: absolute;
+    top: 65%;
+    left: 0;
+    font-size: 10px;
+    width: 80vw;
+    line-height: 150%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    margin-left: 5vw;
   }
 }
-
-
