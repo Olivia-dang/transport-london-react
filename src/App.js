@@ -15,7 +15,7 @@ function App() {
     getBikePoints()
       .then(points => setBikePointList(points))
       .catch(() => setBikePointList([]))
-  })
+  }, [])
 
   return (
     <div>
