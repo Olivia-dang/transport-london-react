@@ -21,8 +21,8 @@ export default function BikePoint() {
                 <p>Common Name: {bikePoint.commonName}</p>
                 <p>Latitude: {bikePoint.lat}</p>
                 <p>Longtitude: {bikePoint.lon}</p>
-                <MapContainer location={bikePoint} zoomLevel={14} />
                 <Link to="/bikepoints">&larr;&nbsp;Bike Points</Link>
+                <MapContainer location={bikePoint} zoomLevel={14} />
             </div>
         ) : (
             <div>Loading&hellip;</div>

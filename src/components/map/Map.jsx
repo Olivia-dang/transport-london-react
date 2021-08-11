@@ -26,7 +26,7 @@ export class MapContainer extends Component {
   render() {
     return (
       <div className="map">
-        <h2 className="map-h2">Visit The Bike Station</h2>
+        <h2 className="map-h2">Visit The Bike Station at {this.props.location.commonName}</h2>
         <div className="google-map">
           <Map
             google={this.props.google}
